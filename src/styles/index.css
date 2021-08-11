@@ -1,3 +1,95 @@
-.red {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap");
+
+/* General Syles */
+
+nav,
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+nav button {
+  color: rgba(240, 248, 255, 0.863);
+}
+
+body {
+  height: 100vh;
+
+  background: linear-gradient(
+      0deg,
+      rgba(44, 44, 44, 0.3),
+      rgba(44, 44, 44, 0.3)
+    ),
+    url("../img/homepage.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  justify-content: flex-start;
+}
+
+/* Header styles */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Beth Ellen", cursive;
+
+  margin: 3rem 0;
+}
+
+nav {
+  flex-direction: column;
+}
+
+nav div {
+  width: 100vw;
+  justify-content: space-around;
+}
+
+nav button {
+  border: 0;
+  border-radius: 0.4rem;
+
+  background-color: rgba(0, 0, 0, 0.562);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 1rem 1.8rem;
+}
+
+nav button:active {
+  background-color: rgba(0, 0, 0, 0.651);
+}
+
+@media (min-width: 767px) {
+  nav {
+    flex-direction: row;
+
+    background-color: rgba(0, 0, 0, 0.329);
+
+    padding: 0 3rem;
+  }
+
+  nav div {
+    justify-content: flex-end;
+  }
+
+  nav button {
+    background-color: transparent;
+  }
+
+  nav button:active {
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+}
+
+@media (min-width: 1023px) {
+  nav button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.568);
+  }
 }

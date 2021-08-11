@@ -7,13 +7,13 @@ export default function () {
   const menu = createNavLink("Menu", "menu");
   const contact = createNavLink("Contact", "contact");
 
-  nav.append(home, menu, contact);
+  const navDiv = document.createElement("div");
+  navDiv.append(home, menu, contact);
+
+  nav.append(title, navDiv);
 
   const body = document.querySelector("body");
   body.insertBefore(nav, body.firstChild);
-  body.insertBefore(title, body.firstChild);
-
-  return "Done";
 }
 
 const createNavLink = function (innerText, id) {
