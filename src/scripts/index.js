@@ -1,13 +1,7 @@
+// styles
 import "../styles/index.css";
 
-function component() {
-  const h1 = document.createElement("h1");
-  h1.classList.add("red");
-  h1.innerText = "I am red";
+// scripts
+import header from "./header.js";
 
-  const content = document.querySelector("#content");
-
-  content.appendChild(h1);
-}
-
-component();
+header();
