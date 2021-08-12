@@ -5,7 +5,10 @@
 nav,
 nav div,
 #menuDiv,
-.foodDiv {
+.foodDiv,
+#contactDiv,
+#contactDiv form,
+#contactDiv form div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,6 +142,48 @@ nav button:active {
   font-size: 1.3rem;
 }
 
+/* Contact styles */
+
+#contactDiv {
+  height: 100%;
+  width: 100%;
+
+  flex-direction: column;
+
+  font-size: 2rem;
+}
+
+#contactDiv img {
+  width: 100%;
+  max-width: 275px;
+
+  margin-bottom: 3rem;
+}
+
+#contactDiv form {
+  flex-direction: column;
+}
+
+#contactDiv form div {
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+}
+
+#contactDiv input {
+  max-width: 60%;
+}
+
+#contactDiv button {
+  background-color: rgb(255, 201, 131);
+
+  font-size: 1rem;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 20px;
+}
+
 /* Media queries */
 
 @media (min-width: 767px) {
@@ -192,6 +237,16 @@ nav button:active {
   .foodDiv {
     margin: 0;
   }
+
+  /* Contact styles  */
+
+  #contactDiv {
+    flex-direction: row;
+  }
+
+  #contactDiv form {
+    margin-left: 3rem;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -207,6 +262,11 @@ nav button:active {
   /* Menu styles  */
   .foodDiv:hover {
     background-color: rgba(0, 0, 0, 0.568);
+  }
+  /* Contact styles  */
+
+  #contactDiv img {
+    max-width: 400px;
   }
 }
 

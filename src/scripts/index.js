@@ -5,9 +5,10 @@ import "../styles/index.css";
 import header from "./header.js";
 import home from "./home.js";
 import menu from "./menu.js";
+import contact from "./contact.js";
 
 header();
-menu();
+home();
 
 const navLinks = document.querySelectorAll("nav button");
 
@@ -20,6 +21,9 @@ for (const navLink of navLinks) {
         break;
       case "menu":
         menu();
+        break;
+      case "contact":
+        contact();
         break;
     }
   });
