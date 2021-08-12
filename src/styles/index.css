@@ -110,6 +110,8 @@ nav button:active {
 }
 
 .foodDiv {
+  background-color: rgba(0, 0, 0, 0.5);
+
   flex-direction: column;
 
   margin: 2rem 0;
@@ -117,11 +119,12 @@ nav button:active {
 }
 
 .foodDiv:active {
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0.603);
 }
 
 .foodImg {
   max-width: 250px;
+  max-height: 150px;
 }
 
 .foodName,
