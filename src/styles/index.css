@@ -41,6 +41,7 @@ h1 {
 }
 
 nav {
+  height: 23vh;
   flex-direction: column;
 }
 
@@ -68,7 +69,8 @@ nav button:active {
 /* Content div styles */
 
 #content {
-  height: 70%;
+  width: 100vw;
+  height: 77vh;
 
   display: flex;
   justify-content: center;
@@ -83,6 +85,17 @@ nav button:active {
 
   font-size: 4rem;
   font-weight: 700;
+}
+
+/* Menu styles */
+
+#menuDiv {
+  width: 60%;
+  max-width: 300px;
+}
+
+.foodImg {
+  max-width: 150px;
 }
 
 /* Media queries */
