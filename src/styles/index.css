@@ -3,7 +3,9 @@
 /* General Syles */
 
 nav,
-nav div {
+nav div,
+#menuDiv,
+.foodDiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +28,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   justify-content: flex-start;
 }
@@ -70,7 +73,7 @@ nav button:active {
 
 #content {
   width: 100vw;
-  height: 77vh;
+  min-height: 77vh;
 
   display: flex;
   justify-content: center;
@@ -90,12 +93,47 @@ nav button:active {
 /* Menu styles */
 
 #menuDiv {
-  width: 60%;
-  max-width: 300px;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.322);
+
+  flex-direction: column;
+
+  margin: 5rem 0;
+  padding: 3rem;
+}
+
+#menuDiv h2 {
+  font-size: 3rem;
+
+  margin-bottom: 3rem;
+}
+
+.foodDiv {
+  flex-direction: column;
+
+  margin: 2rem 0;
+  padding: 1.8rem;
+}
+
+.foodDiv:active {
+  background-color: rgba(0, 0, 0, 0.521);
 }
 
 .foodImg {
-  max-width: 150px;
+  max-width: 250px;
+}
+
+.foodName,
+.foodPrice {
+  margin: 0.3rem 0;
+}
+
+.foodName {
+  font-size: 2rem;
+}
+.foodPrice {
+  font-size: 1.3rem;
 }
 
 /* Media queries */
@@ -128,11 +166,49 @@ nav button:active {
   #tagLine {
     font-size: 5rem;
   }
+
+  /* Menu styles */
+
+  #menuDiv {
+    width: 90%;
+
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  #menuDiv h2 {
+    text-align: center;
+  }
+
+  #foodItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .foodDiv {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1023px) {
   nav button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.568);
+  }
+
+  #menuDiv {
+    width: 70%;
+  }
+
+  /* Menu styles  */
+  .foodDiv:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+}
+
+@media (min-width: 1300px) {
+  #foodItems {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

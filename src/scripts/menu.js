@@ -11,11 +11,15 @@ export default function () {
 
   menuDiv.append(menuHeading);
 
-  for (let i = 0; i < 10; i++) {
+  const foodItemsDiv = document.createElement("div");
+  foodItemsDiv.id = "foodItems";
+
+  for (let i = 0; i < 8; i++) {
     const foodDiv = createFoodDiv("Burger", burger, 12);
-    menuDiv.append(foodDiv);
+    foodItemsDiv.append(foodDiv);
   }
 
+  menuDiv.append(foodItemsDiv);
   content.append(menuDiv);
 }
 

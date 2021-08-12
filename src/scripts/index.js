@@ -7,7 +7,7 @@ import home from "./home.js";
 import menu from "./menu.js";
 
 header();
-home();
+menu();
 
 const navLinks = document.querySelectorAll("nav button");
 
