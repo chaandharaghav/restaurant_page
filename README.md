@@ -7,4 +7,4 @@ What I learned
 - how to install external libraries through npm
 - how to configure webpack using webpack.config.js
 
-[Live Demo](https://chaandharaghav.github.io/google-homepage/) :point_left:
+[Live Demo](https://chaandharaghav.github.io/restaurant_page/) :point_left:
